@@ -1,0 +1,190 @@
+ 
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* margin-left: 30px ;
+    /* margin-right: 30px;   --> apn iski jagah width: ; de sakte hai  */
+}  
+
+html,body{
+    line-height: 1.4;
+    font-family: 'Roboto', sans-serif;
+}
+
+         /*  Navigation bar stylling betichood */
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 15px; */
+    align-items: center;
+} 
+  /* container for set with and margin */
+  .container{
+      width: 1000px;
+      margin: 0 auto;
+      height: 100px;
+      /* border: 1px solid black; */
+
+  }
+  /* select the nav tag for shadow */
+  nav{
+        box-shadow: 5px 5px 5px green;
+        position: sticky;
+        top: 0;
+        background-color: rgb(211, 187, 170);
+  }
+
+   /*  navigation logo stylling */
+.logo_bar img{
+   width: 100px;
+   /* margin-bottom: 50px; */
+    
+}  
+/*  navBar stylling */
+.navbar
+{
+    font-size: 24px;
+}
+
+
+
+/* section1  */
+.hero{
+    display: flex;
+     width: 90%;
+    /* border: 1px solid black;  */
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    gap: 100px;
+     
+}  
+.hero_image img{
+    width: 350px;
+}  
+.hero_content h1{
+    font-size: 3rem;
+    /* font-size: 72px; */
+    font-weight: 900;
+    margin: 5px 0 20px 0;
+    
+} 
+.color{
+   background-color:#d5bdaf ;
+   color: red;
+}
+ .tag{
+    background-color: #283618;
+    color: white;
+    padding: 8px;
+    
+    /* width: 190px; */
+    align-self: flex-start;
+    margin-bottom: 10px;
+ } 
+ /* tag */
+ .hone{
+   text-align: center;
+ }
+ .button{
+  background-color: #dda15e;
+  margin-top: 20px;
+  /* width: 120px; */
+  align-self: flex-start;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+ }
+ a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+ } 
+ .button:hover{
+  background-color: #bc6c25;
+ }
+ .para{
+    font-size: small;
+ }
+
+ @media(max-width:768px){
+     .hero{
+      flex-direction:column;
+     }  
+     .hero_image img{
+        margin-right: 300px;
+     } 
+     .hero_content{
+        
+       display: flex;
+       flex-direction: column;
+        
+     }  
+     .hero_content h1{
+        font-size: 2rem;
+     } 
+     .para{
+        width: 600px;
+     }
+     
+ }  
+
+
+ /* section Futures */
+ .features{
+    display: flex;
+    margin-top: 100px;
+    /* width: 900px; */
+    justify-content: center;
+    border: 1px solid black;
+    align-items: center;
+    padding: 40px;
+
+ } 
+ .future{
+    display: flex;
+    gap: 20px;
+ }  
+
+ .future img{
+     width: 60px;
+     height: 50px;
+ }
+
+  /*  section1 ki heigh */
+  .section1{
+      height: 1600vh;
+  }
+
+.grid_section{
+
+  position: relative;
+    top: 700px;
+    /* width: 80%; */
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    gap: 10px;
+}
+/* grid items */
+.grid_item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}   
+.grid_item2{
+    grid-row-start: 1;
+    grid-row-start: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+/* .image img{
+    width: 200px;
+} */
